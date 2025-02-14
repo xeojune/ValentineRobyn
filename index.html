@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Valentines</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+  <div class="mystery-box-container">
+    <div class="mystery-box">
+      <div class="box-lid">
+        <div class="lid-top-half"></div>
+        <div class="lid-bottom-half"></div>
+        <div class="lid-tape-strip"></div>
+      </div>
+      <div class="box-front">
+        <div class="box-title">MYSTERY BOX</div>
+        <div class="box-sections">
+          <div class="section-top">
+            <div class="section left"></div>
+            <div class="section middle"></div>
+            <div class="section right"></div>
+          </div>
+          <div class="section-bottom">
+            <div class="section left"></div>
+            <div class="section middle"></div>
+            <div class="section right"></div>
+          </div>
+        </div>
+        <div class="tape-strip"></div>
+      </div>
+      <div class="box-top"></div>
+      <div class="box-right">
+        <div class="right-section"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content-container hidden">
+    <h1 class="valentine-title">Happy Valentines</h1>
+    <div id="chocolate_rains">
+      <div class="heart">
+        <div class="inner">
+          <div class="regular">
+            <div class="movable">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+          </div>
+          <div class="reverse">
+            <div class="movable">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- partial:index.partial.html -->
+    <div class="container">
+      <div class="box">
+        <div class="bite-marks">
+          <div class="bite-mark bite-1"></div>
+          <div class="bite-mark bite-2"></div>
+          <div class="bite-mark bite-3"></div>
+          <div class="bite-mark bite-4"></div>
+        </div>
+        <div class="silver-triangle"></div>
+      </div>
+      <div class="dog">
+        <div class="speech-bubble">쪼꼬 맛있게 먹어라</div>
+        <div class="dog-group">
+          <div class="tongue-open"></div>
+          <div class="body-group">
+            <div class="dog-box">
+              <div class="dog-box-sign">
+                <div class="content">다은이의 준짱</div>
+              </div>
+              <div class="bottom-shadow"></div>
+              <div class="top-left-shadow"></div>
+            </div>
+            <div class="tail-group">
+              <div class="tail">
+                <div class="tail">
+                  <div class="tail">
+                    <div class="tail">
+                      <div class="tail">
+                        <div class="tail">
+                          <div class="tail">
+                            <div class="tail">
+                              <div class="tail last"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dog-shape"></div>
+          </div>
+          <div class="head-group">
+            <div class="ear">
+              <div class="ear-container">
+                <div class="ear-left"></div>
+              </div>
+            </div>
+            <div class="head"></div>
+            <div class="ear right">
+              <div class="ear-container">
+                <div class="ear-right"></div>
+              </div>
+            </div>
+            <div class="face">
+              <div class="muzzle">
+                <div class="nose"></div>
+                <div class="mouth-close"></div>
+                <div class="mouth-open">
+                  <div class="teeth"></div>
+                </div>
+                <div class="mouth-barks"></div>
+              </div>
+              <div class="eyes">
+                <div class="eye-left">
+                  <div class="pupil"></div>
+                </div>
+                <div class="eye-right">
+                  <div class="pupil"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="plant-group">
+        <div class="pot"></div>
+        <div class="plant">
+          <div class="stem">
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="shapes">
+        <div class="red-shape"></div>
+        <div class="blue-shape"></div>
+        <div class="yellow-shape"></div>
+      </div>
+    </div>
+    <!-- partial -->
+
+    <script>
+      // Generate hearts dynamically
+      const chocolateRains = document.getElementById('chocolate_rains');
+      const heartTemplate = chocolateRains.querySelector('.heart');
+      
+      // Create 29 more hearts (total 30)
+      for (let i = 0; i < 29; i++) {
+        const newHeart = heartTemplate.cloneNode(true);
+        chocolateRains.appendChild(newHeart);
+      }
+    </script>
+    <script  src="src/valentine.js"></script>
+  </div>
+</body>
+</html>
